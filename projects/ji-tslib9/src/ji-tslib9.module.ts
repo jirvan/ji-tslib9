@@ -24,15 +24,54 @@ import {TooltipModule} from 'primeng/tooltip';
 import {CalendarModule} from 'primeng/calendar';
 import {FileUploadModule} from 'primeng/fileupload';
 import {MenuModule} from 'primeng/menu';
-import {BlockableDiv} from "./components/blockable-div";
-import {JiTextfieldm} from "./components/ji-textfieldm";
-import {ProgressOverlay} from "./components/progress-overlay";
-import {JiErrorDialog} from "./errors/ji-error-dialog";
-
+import {BlockableDiv} from './components/blockable-div';
+import {JiTextfieldm} from './components/ji-textfieldm';
+import {ProgressOverlay} from './components/progress-overlay';
+import {JiErrorDialog} from './errors/ji-error-dialog';
+import {JiMessageDialog} from './components/ji-message-dialog';
+import {JiConfirmationDialog} from './components/ji-confirmation-dialog';
+import {JiTextfield} from './components/ji-textfield';
+import {CharFilterDirective} from './directives/charFilter-directive';
+import {JiCharfilteredfield} from './components/ji-charfilteredfield';
+import {JiCheckbox} from './components/ji-checkbox';
+import {JiCheckboxm} from './components/ji-checkboxm';
+import {JiColorpickerComponent} from './components/ji-colorpicker.component';
+import {JiColorpickerm} from './components/ji-colorpickerm';
+import {JiCurrencyInput} from './components/ji-currency-input';
+import {JiCurrencyPinput} from './components/ji-currency-pinput';
+import {JiDatefield} from './components/ji-datefield';
+import {JiDatefieldm} from './components/ji-datefieldm';
+import {JiDropdown} from './components/ji-dropdown';
+import {JiFileUploader} from './components/ji-file-uploader';
+import {JiImagefield} from './components/ji-imagefield';
+import {JiImagefieldm} from './components/ji-imagefieldm';
+import {JiIntegerfield} from './components/ji-integerfield';
+import {JiIntegerfieldm} from './components/ji-integerfieldm';
+import {JiJoblogDialogComponent} from './ji-joblog-dialog/ji-joblog-dialog.component';
 
 @NgModule({
             declarations: [BlockableDiv,
+                           CharFilterDirective,
+                           JiCharfilteredfield,
+                           JiCheckbox,
+                           JiCheckboxm,
+                           JiColorpickerComponent,
+                           JiColorpickerm,
+                           JiConfirmationDialog,
+                           JiCurrencyInput,
+                           JiCurrencyPinput,
+                           JiDatefield,
+                           JiDatefieldm,
+                           JiDropdown,
                            JiErrorDialog,
+                           JiFileUploader,
+                           JiImagefield,
+                           JiImagefieldm,
+                           JiIntegerfield,
+                           JiIntegerfieldm,
+                           JiJoblogDialogComponent,
+                           JiMessageDialog,
+                           JiTextfield,
                            JiTextfieldm,
                            ProgressOverlay],
             imports: [
@@ -63,7 +102,27 @@ import {JiErrorDialog} from "./errors/ji-error-dialog";
               ScrollPanelModule
             ],
             exports: [BlockableDiv,
+                      CharFilterDirective,
+                      JiCharfilteredfield,
+                      JiCheckbox,
+                      JiCheckboxm,
+                      JiColorpickerComponent,
+                      JiColorpickerm,
+                      JiConfirmationDialog,
+                      JiCurrencyInput,
+                      JiCurrencyPinput,
+                      JiDatefield,
+                      JiDatefieldm,
+                      JiDropdown,
                       JiErrorDialog,
+                      JiFileUploader,
+                      JiImagefield,
+                      JiImagefieldm,
+                      JiIntegerfield,
+                      JiIntegerfieldm,
+                      JiJoblogDialogComponent,
+                      JiMessageDialog,
+                      JiTextfield,
                       JiTextfieldm,
                       ProgressOverlay]
           })
