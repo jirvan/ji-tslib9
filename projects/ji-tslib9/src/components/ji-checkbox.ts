@@ -38,14 +38,14 @@ import {FormGroup} from '@angular/forms';
                          '     [ngStyle]="cStyle"\n' +
                          '     [ngClass]="cClass"\n' +
                          '     [pTooltip]="cTooltip" [tooltipPosition]="cTooltipPosition">\n' +
-                         '        <p-checkbox [label]="label" [disabled]="disabled" [formControlName]="control" binary="true"></p-checkbox>\n' +
+                         '        <p-checkbox [label]="label" [disabled]="true" [formControlName]="control" binary="true"></p-checkbox>\n' +
                          '</div>\n' +
                          '<div *ngIf="!group" style="margin-top: 13px; padding-left: 0; padding-right: 0; padding-bottom: 5px;"\n' +
                          '     [formGroup]="form"\n' +
                          '     [ngStyle]="cStyle"\n' +
                          '     [ngClass]="cClass"\n' +
                          '     [pTooltip]="cTooltip" [tooltipPosition]="cTooltipPosition">\n' +
-                         '        <p-checkbox [label]="label" [disabled]="disabled" [formControlName]="control" binary="true"></p-checkbox>\n' +
+                         '        <p-checkbox [label]="label" [disabled]="true" [formControlName]="control" binary="true"></p-checkbox>\n' +
                          '</div>'
            })
 export class JiCheckbox {

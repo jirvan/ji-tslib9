@@ -40,18 +40,18 @@ import {FormGroup} from '@angular/forms';
                          '     [pTooltip]="cTooltip" [tooltipPosition]="cTooltipPosition">\n' +
                          '    <div *ngIf="group" [formGroupName]="group" style="position: relative; padding-right: 20px">\n' +
                          '        <span class="md-inputfield">\n' +
-                         '            <p-calendar *ngIf="width" [disabled]="disabled"  [formControlName]="control" [dateFormat]="dateFormat"\n' +
+                         '            <p-calendar *ngIf="width" [disabled]="true"  [formControlName]="control" [dateFormat]="dateFormat"\n' +
                          '                       [style.width]="width"></p-calendar>\n' +
-                         '            <p-calendar *ngIf="!width" [disabled]="disabled" [formControlName]="control" [dateFormat]="dateFormat"\n' +
+                         '            <p-calendar *ngIf="!width" [disabled]="true" [formControlName]="control" [dateFormat]="dateFormat"\n' +
                          '                       [inputStyle]="inputStyle"></p-calendar>\n' +
                          '            <label>{{label}}</label>\n' +
                          '        </span>\n' +
                          '    </div>\n' +
                          '    <div *ngIf="!group" style="position: relative; padding-right: 20px">\n' +
                          '        <span class="md-inputfield">\n' +
-                         '            <p-calendar *ngIf="width" [disabled]="disabled"  [formControlName]="control" [dateFormat]="dateFormat"\n' +
+                         '            <p-calendar *ngIf="width" [disabled]="true"  [formControlName]="control" [dateFormat]="dateFormat"\n' +
                          '                       [style.width]="width"></p-calendar>\n' +
-                         '            <p-calendar *ngIf="!width" [disabled]="disabled" [formControlName]="control" [dateFormat]="dateFormat"\n' +
+                         '            <p-calendar *ngIf="!width" [disabled]="true" [formControlName]="control" [dateFormat]="dateFormat"\n' +
                          '                       [inputStyle]="inputStyle"></p-calendar>\n' +
                          '            <label>{{label}}</label>\n' +
                          '        </span>\n' +
