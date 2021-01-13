@@ -1,6 +1,6 @@
 /*
 
- Copyright (c) 2019 Jirvan Pty Ltd
+ Copyright (c) 2019, 2020, 2021 Jirvan Pty Ltd
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without modification,
@@ -38,19 +38,20 @@ import {FormGroup} from '@angular/forms';
                          '     [ngStyle]="cStyle"\n' +
                          '     [ngClass]="cClass"\n' +
                          '     [pTooltip]="cTooltip" [tooltipPosition]="cTooltipPosition">\n' +
-                         '        <p-checkbox [label]="label" [formControlName]="control" binary="true"></p-checkbox>\n' +
+                         '        <p-checkbox [label]="label" [disabled]="disabled" [formControlName]="control" binary="true"></p-checkbox>\n' +
                          '</div>\n' +
                          '<div *ngIf="!group" style="margin-top: 13px; padding-left: 0; padding-right: 0; padding-bottom: 5px;"\n' +
                          '     [formGroup]="form"\n' +
                          '     [ngStyle]="cStyle"\n' +
                          '     [ngClass]="cClass"\n' +
                          '     [pTooltip]="cTooltip" [tooltipPosition]="cTooltipPosition">\n' +
-                         '        <p-checkbox [label]="label" [formControlName]="control" binary="true"></p-checkbox>\n' +
+                         '        <p-checkbox [label]="label" [disabled]="disabled" [formControlName]="control" binary="true"></p-checkbox>\n' +
                          '</div>'
            })
 export class JiCheckbox {
 
     @Input() label: string;
+    @Input() disabled = false;
     @Input() cTooltip: string;
     @Input() cTooltipPosition: string;
     @Input() cStyle: any;

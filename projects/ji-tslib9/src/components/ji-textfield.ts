@@ -40,18 +40,18 @@ import {FormGroup} from '@angular/forms';
                          '     [pTooltip]="cTooltip" [tooltipPosition]="cTooltipPosition">\n' +
                          '    <div *ngIf="group" [formGroupName]="group" style="position: relative; padding-right: 20px">\n' +
                          '        <span class="md-inputfield">\n' +
-                         '            <input *ngIf="width"  pInputText [readonly]="readonly" [formControlName]="control"\n' +
+                         '            <input *ngIf="width" [disabled]="disabled"  pInputText [readonly]="readonly" [formControlName]="control"\n' +
                          '                   style="width: 100%" [style.width]="width">\n' +
-                         '            <input *ngIf="!width" pInputText [readonly]="readonly" [formControlName]="control"\n' +
+                         '            <input *ngIf="!width" [disabled]="disabled" pInputText [readonly]="readonly" [formControlName]="control"\n' +
                          '                   style="width: 100%" [ngStyle]="inputStyle">\n' +
                          '            <label>{{label}}</label>\n' +
                          '        </span>\n' +
                          '    </div>\n' +
                          '    <div *ngIf="!group" style="position: relative; padding-right: 20px">\n' +
                          '        <span class="md-inputfield">\n' +
-                         '            <input *ngIf="width"  pInputText [readonly]="readonly" [formControlName]="control"\n' +
+                         '            <input *ngIf="width" [disabled]="disabled"  pInputText [readonly]="readonly" [formControlName]="control"\n' +
                          '                   style="width: 100%" [style.width]="width">\n' +
-                         '            <input *ngIf="!width" pInputText [readonly]="readonly" [formControlName]="control"\n' +
+                         '            <input *ngIf="!width" [disabled]="disabled" pInputText [readonly]="readonly" [formControlName]="control"\n' +
                          '                   style="width: 100%" [ngStyle]="inputStyle">\n' +
                          '            <label>{{label}}</label>\n' +
                          '        </span>\n' +
@@ -64,6 +64,7 @@ export class JiTextfield {
 
     @Input() readonly: boolean;
     @Input() label: string = 'Color';
+    @Input() disabled = false;
     @Input() cTooltip: string;
     @Input() cTooltipPosition: string;
     @Input() cStyle: any;
